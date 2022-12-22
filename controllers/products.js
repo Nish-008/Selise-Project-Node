@@ -1,8 +1,8 @@
 const product = require("../models/product")
 
 exports.findProducts = async (req,res)=>{
-    const products = await product.find();
-    res.send({data: products})
+    const products = await product.find({});
+    res.status(200).json(products);
 };
 
 exports.createProduct = async (req, res)=>{

@@ -13,35 +13,38 @@ const schema = new mongoose.Schema({
         minLength: 3,
         maxLength: 50
     },
-    Category : {
+    category : {
         type: String,
-        enum: ['KG', 'liters', 'meters', 'cm'],
+        enum: ['Electronics', 'Fashion', 'Books', 'Accessories'],
         required: true
     },
-    Price : {
+    price : {
         type: Number,
         required: true
     },
-    Description : {
+    description : {
         type: String,
         minLength: 3,
-        maxLength: 50
+        maxLength: 250
     },
-    ImageUrl: {
+    imageUrl: {
         type: String
     },
-    IsBestArchieved: Boolean,
-    CreatedDate:{
+    quantity: {
+        type : Number
+    },
+    isBestArchieved: Boolean,
+    createdDate:{
         // type: Date,
         // required: true,
         // max: Date.now, 
         type: String,
         required: true 
     },
-    Origin:{
+    origin:{
         type: String,
         required:true,
-        enum: ['KG', 'liters', 'meters', 'cm']
+        enum: ['Shop', 'Individual']
     }
 
 });
