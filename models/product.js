@@ -4,28 +4,28 @@ const schema = new mongoose.Schema({
 
     productName:{
         type: String,
-        // minLength: 3,
-        // maxLength: 50
+        minLength: 3,
+        maxLength: 50
     },
     productShortCode : {
         type: String,
-        // required: true,
-        // minLength: 3,
-        // maxLength: 50
+        required: true,
+        minLength: 3,
+        maxLength: 50
     },
     category : {
         type: String,
-        // enum: ['Electronics', 'Fashion', 'Books', 'Accessories'],
-        // required: true
+        enum: ['Electronics', 'Fashion', 'Books', 'Accessories'],
+        required: true
     },
     price : {
         type: String,
-        // required: true
+        required: true
     },
     description : {
         type: String,
-        // minLength: 3,
-        // maxLength: 250
+        minLength: 3,
+        maxLength: 250
     },
     imageUrl: {
         type: String
@@ -35,16 +35,13 @@ const schema = new mongoose.Schema({
     },
     isBestArchieved: Boolean,
     createdDate:{
-        // type: Date,
-        // required: true,
-        // max: Date.now, 
         type: Date,
-        // required: true 
+        required: true 
     },
     origin:{
         type: String,
-        // required:true,
-        // enum: ['Shop', 'Individual']
+        required:true,
+        enum: ['Shop', 'Individual']
     }
 
 });

@@ -6,6 +6,7 @@ exports.findProducts = async (req,res)=>{
 };
 
 exports.createProduct = async (req, res)=>{
+    console.log(req.body);
     const products= new product(req.body);
     await products.save();
     res.send({data: products});
