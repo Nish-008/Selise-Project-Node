@@ -10,7 +10,7 @@ mongoose.set('strictQuery', true);
 
 
 mongoose
-  .connect("mongodb://Nishat:<1234>@ac-rwasxsk-shard-00-00.bx4hzue.mongodb.net:27017,ac-rwasxsk-shard-00-01.bx4hzue.mongodb.net:27017,ac-rwasxsk-shard-00-02.bx4hzue.mongodb.net:27017/?ssl=true&replicaSet=atlas-xw1ppi-shard-0&authSource=admin&retryWrites=true&w=majority", {
+  .connect("mongodb://Nishat:1234@ac-rwasxsk-shard-00-00.bx4hzue.mongodb.net:27017,ac-rwasxsk-shard-00-01.bx4hzue.mongodb.net:27017,ac-rwasxsk-shard-00-02.bx4hzue.mongodb.net:27017/?ssl=true&replicaSet=atlas-xw1ppi-shard-0&authSource=admin&retryWrites=true&w=majority", {
     
     useNewUrlParser: true
   })
